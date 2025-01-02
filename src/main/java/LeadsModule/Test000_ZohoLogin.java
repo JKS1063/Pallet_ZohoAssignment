@@ -9,9 +9,12 @@ import java.util.HashMap;
 
 public class Test000_ZohoLogin extends Reports {
 
+    private static final String username = "jayakrishna.automation@gmail.com";
+    private static final String password = "JKS@zoho";
+
     @DataProvider(name = "loginData")
-    public static Object[][] getLoginData() {
-        return new Object[][]{{"jayakrishna.automation@gmail.com", "JKS@zoho",
+    public Object[][] getLoginData() {
+        return new Object[][]{{this.username, this.password,
         "Login Test",
         "Login to Zoho CRM Account",
         "Test Passed: Successfully logged into Zoho CRM Account",
