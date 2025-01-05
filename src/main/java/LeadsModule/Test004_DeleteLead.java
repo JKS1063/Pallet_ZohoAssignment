@@ -1,12 +1,12 @@
 package LeadsModule;
 
-import Utilities.Reports;
+import static Utilities.Reports.*;
 import com.microsoft.playwright.Locator;
 import org.testng.annotations.DataProvider;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import java.util.HashMap;
 
-public class Test004_DeleteLead extends Reports {
+public class Test004_DeleteLead {
 
     @DataProvider (name = "deleteLeadData")
     public static Object[][] getDeleteLeadData() {

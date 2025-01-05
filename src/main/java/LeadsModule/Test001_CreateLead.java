@@ -1,6 +1,6 @@
 package LeadsModule;
 
-import Utilities.Reports;
+import static Utilities.Reports.*;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.options.LoadState;
 import com.microsoft.playwright.options.WaitForSelectorState;
@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import java.util.HashMap;
 
-public class Test001_CreateLead extends Reports {
+public class Test001_CreateLead {
 
     @DataProvider (name = "createLeadData")
     public static Object[][] getCreateLeadData() {

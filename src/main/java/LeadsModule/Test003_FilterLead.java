@@ -1,6 +1,6 @@
 package LeadsModule;
 
-import Utilities.Reports;
+import static Utilities.Reports.*;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.options.LoadState;
 import org.testng.annotations.DataProvider;
@@ -8,7 +8,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 
 import java.util.HashMap;
 
-public class Test003_FilterLead extends Reports {
+public class Test003_FilterLead {
     @DataProvider(name = "filterLeadData")
     public static Object[][] getFilterLeadData() {
         return new Object[][] {

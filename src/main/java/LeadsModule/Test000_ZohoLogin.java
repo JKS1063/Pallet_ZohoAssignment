@@ -1,5 +1,5 @@
 package LeadsModule;
-import Utilities.Reports;
+import static Utilities.Reports.*;
 import com.microsoft.playwright.Locator;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import com.microsoft.playwright.options.LoadState;
@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 import java.util.HashMap;
 
-public class Test000_ZohoLogin extends Reports {
+public class Test000_ZohoLogin {
 
     private static String username = "jayakrishna.automation@gmail.com";
     private static String password = "JKS@zoho";
