@@ -17,7 +17,7 @@
   
   * **Login:** This automation class designed to handle the login functionality of the Zoho CRM application.
     * **Key Features:**
-      * **Data Provider:** getLoginData @DataProvider supplies test Data for loggin into the Zoho CRM. This data includes parameters like username, password along with test description and expected outcomes.
+        * **Data Provider:** getLoginData @DataProvider supplies test Data for loggin into the Zoho CRM. This data includes parameters like username, password along with test description and expected outcomes.
         * **Data Handling:** zohoLoginData HashMap reads data from Excel sheet called "website".
         * **Login Process:** The zohoLogin method performs the actual login process. It interacts with various UI elements to enter username and password.
         * **Validation:** The loginValidations method checks if the login was successfully by verifying the state of specific elements on the home page, such as welcome messages and module lists.
@@ -25,7 +25,7 @@
     
   * **Create Lead:** This automation class designed to create a new lead in a CRM application using Playwright for browser automation and TestNG for test management.
      * **Key Features:**
-       * **Data Provider:** The getCreateLeadData method is a @DataProvider supplies test data for creating a lead. It retruns a two-dimensional array containing lead details such as Company name, Contact information etc.,
+         * **Data Provider:** The getCreateLeadData method is a @DataProvider supplies test data for creating a lead. It retruns a two-dimensional array containing lead details such as Company name, Contact information etc.,
          * **Data Handling:** The createLeadData HashMap reads data from Excel sheet called "create_lead".
          * **Lead Creation:** The leadCreate method automates the process the filling out the lead creation form. It includes error handling to catch and log exceptions.
          * **Validation:** The createLeadValidations method checks if the lead was created successfully by asserting the visibilty of specific elements.
