@@ -9,8 +9,8 @@ import java.util.HashMap;
 
 public class Test000_ZohoLogin extends Reports {
 
-    private static final String username = "jayakrishna.automation@gmail.com";
-    private static final String password = "JKS@zoho";
+    private static String username = "jayakrishna.automation@gmail.com";
+    private static String password = "JKS@zoho";
 
     @DataProvider(name = "loginData")
     public Object[][] getLoginData() {
