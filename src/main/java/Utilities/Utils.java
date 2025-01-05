@@ -53,6 +53,10 @@ public class Utils extends Drivers{
         return locate(selector);
     }
 
+    public static void waitForElementVisible(Locator locator) {
+        locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+    }
+
     public static void waitForElementVisible(Locator locator, Integer seconds) throws Exception{
         locator.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE).setTimeout(seconds * 1000));
     }
