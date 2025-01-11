@@ -25,7 +25,7 @@
     
   * **Create Lead:** This automation class designed to create a new lead in a CRM application using Playwright for browser automation and TestNG for test management.
      * **Key Features:**
-         * **Data Provider:** The getCreateLeadData method is a @DataProvider supplies test data for creating a lead. It retruns a two-dimensional array containing lead details such as Company name, Contact information etc.,
+         * **Data Provider:** The getCreateLeadData @DataProvider supplies test data for creating a lead. It retruns a two-dimensional array containing lead details such as Company name, Contact information etc.,
          * **Data Handling:** The createLeadData HashMap reads data from Excel sheet called "create_lead".
          * **Lead Creation:** The leadCreate method automates the process the filling out the lead creation form. It includes error handling to catch and log exceptions.
          * **Validation:** The createLeadValidations method checks if the lead was created successfully by asserting the visibilty of specific elements.
@@ -33,7 +33,7 @@
     
   * **Edit Lead:** This automation class designed to edit and validate a lead's details in a CRM application.
      * **Key Features:**
-       * **Data Provider:** The getEditLeadData methods is a @DataProvider supplies test data for editing a lead. This data includes parameters like the title, mobile number, and annual revenue along with test descriptions and expected outcomes.
+       * **Data Provider:** The getEditLeadData @DataProvider supplies test data for editing a lead. This data includes parameters like the title, mobile number, and annual revenue along with test descriptions and expected outcomes.
        * **Data Handling:** editLeadData HashMap reads data from a Excel Sheet called "edit_lead".
        * **Lead Editing:** The leadEdit method performs the actual lead editing process. It interacts with UI elements and update the lead details.
        * **Validation:** The validateEditLead method checks if the lead was edited successfully by verifying the visability of specific elements on the page and comparing previous and edited values.
