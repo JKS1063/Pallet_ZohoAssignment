@@ -14,11 +14,11 @@ import java.nio.file.Paths;
 public class Reports extends Utils{
 
     private static ExtentReports extentReports;
-    private static String reportPath = System.getProperty("user.dir") + "\\reports\\";
+    private static String reportPath = System.getProperty("user.dir") + "\\reports\\Pallet_ZohoCRMLeads_Report.html";
 
     public static void reports(String reportName, String docTitle) {
         extentReports = new ExtentReports();
-        File file = new File(reportPath + "Pallet_ZohoCRMLeads.html");
+        File file = new File(reportPath);
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
         ExtentSparkReporterConfig config =sparkReporter.config();
 
