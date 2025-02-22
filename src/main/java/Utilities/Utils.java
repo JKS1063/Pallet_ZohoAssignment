@@ -48,8 +48,8 @@ public class Utils extends Drivers{
         return value;
     }
 
-    public static Locator waitForElement(String selector, WaitForSelectorState state) {
-        page.waitForSelector(selector, new Page.WaitForSelectorOptions().setState(state));
+    public static Locator waitForElement(String selector) {
+        page.waitForSelector(selector, new Page.WaitForSelectorOptions().setState(WaitForSelectorState.VISIBLE));
         return locate(selector);
     }
 
